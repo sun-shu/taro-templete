@@ -45,7 +45,10 @@
     "dev:qq": "npm run build:qq -- --watch",
     "dev:jd": "npm run build:jd -- --watch",
     "dev:quickapp": "npm run build:quickapp -- --watch",
-    "postinstall": "weapp-tw patch"
+    "postinstall": "weapp-tw patch",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -w -r 0"
   },
   "browserslist": [
     "last 3 versions",
