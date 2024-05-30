@@ -54,7 +54,7 @@ class Index extends Component {
       <View className="index">
         <View className="at-article">
           <View className="at-article__h1">elf-taro-cli</View>
-          <View className="at-article__info">基于 Taro的小程序脚手架</View>
+          <View className="at-article__info">基于 Taro的小程序脚手架1</View>
           <View className="at-article__content">
             <View className="at-article__section">
               <View className="at-article__h2">“首页” 功能介绍</View>
@@ -69,20 +69,15 @@ class Index extends Component {
               <View className="at-article__p">
                 使用 CSS in JS 修改 文字颜色
               </View>
-                <Text>文字颜色</Text>
-                <View>
-                  <AtButton type="primary" size="small" className="index--btn">
-                    按钮A
-                  </AtButton>
-                  <AtButton
-                    type="secondary"
-                    size="small"
-                    className="index--btn"
-                  >
-                    按钮B
-                  </AtButton>
-                </View>
-
+              <Text>文字颜色</Text>
+              <View>
+                <AtButton type="primary" size="small" className="index--btn">
+                  按钮A
+                </AtButton>
+                <AtButton type="secondary" size="small" className="index--btn">
+                  按钮B
+                </AtButton>
+              </View>
 
               <AtDivider content="“计数” 功能介绍" />
               <View className="at-article__p">基于Dva的计数器</View>
