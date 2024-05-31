@@ -15,17 +15,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "*.{jsx,ts,tsx}": [
       "prettier --write",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
+},
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -48,7 +42,9 @@
     "postinstall": "weapp-tw patch",
     "commit": "git-cz",
     "release": "standard-version",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -w -r 0"
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -w -r 0",
+    "prepare": "husky install",
+    "commit-msg": "commitlint --config .commitlintrc.js -e -V"
   },
   "browserslist": [
     "last 3 versions",
@@ -89,6 +85,7 @@
     "taro-ui": "^3.2.1"
   },
   "devDependencies": {
+    "": "link:/",
     "@babel/core": "^7.8.0",
     "@commitlint/cli": "^19.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
@@ -111,7 +108,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^4.3.0",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.5",
     "postcss": "^8.4.38",
     "postcss-rem-to-responsive-pixel": "^6.0.1",
