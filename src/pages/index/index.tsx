@@ -47,7 +47,9 @@ class Index extends Component {
 
   componentWillUnmount() {}
 
-  componentDidShow() {}
+  componentDidShow() {
+    const a = 1
+  }
 
   componentDidHide() {}
 
@@ -56,7 +58,9 @@ class Index extends Component {
       <View className="index">
         <View className="at-article">
           <View className="at-article__h1">elf-taro-cli</View>
-          <View className="at-article__info">基于 Taro的小程序脚手架62354</View>
+          <View className="at-article__info">
+            基于 Taro的小程序脚手架623547
+          </View>
           <View className="at-article__content">
             <View className="at-article__section">
               <View className="at-article__h2">“首页” 功能介绍</View>
